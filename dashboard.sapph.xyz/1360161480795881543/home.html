@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.ico" />
+		<link rel="manifest" href="../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Primary Meta Tags -->
+ <meta name="title" content="Sapphire">
+ <meta name="description" content="A Discord Bot — Done Right | Custom slash commands, buttons & select menus, Auto Moderation, Social Notifications, Reaction Roles, Logging, Custom (ephemeral) messages, Scheduled messages, Automated / triggered messages and more">
+
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://sapph.xyz/">
+ <meta property="og:title" content="Sapphire">
+ <meta property="og:description" content="A Discord Bot — Done Right | Custom slash commands, buttons & select menus, Auto Moderation, Social Notifications, Reaction Roles, Logging, Custom (ephemeral) messages, Scheduled messages, Automated / triggered messages and more">
+ <meta property="og:image" content="https://sapph.xyz/assets/branding/logo.png">
+ <meta name="theme-color" content="#0099FF">
+ <script src="/js/svg-inject.min.js"></script>
+ <script>
+  SVGInject.setOptions({
+   afterInject(img, svg) {
+    let imgFill = img.attributes.getNamedItem("fill")?.value;
+    if (svg.children && imgFill) {
+     for (let i = 0; i < svg.children.length; i++) {
+      svg.children[i].setAttribute("fill", imgFill);
+     }
+    }
+   }
+  })
+ </script>
+ <!--<link rel="stylesheet" href="/css/normalize.css">
+ <link rel="stylesheet" href="/css/viewport-fix.css">-->
+		<title>Sapphire | Dashboard</title><!-- HEAD_svelte-qgtd5w_START --><script id="profitwell-js" data-pw-auth="7ed9e9cbc4e51ae8fd1aa23591ccf624">(function(i,s,o,g,r,a,m){i[o]=i[o]||function(){(i[o].q=i[o].q||[]).push(arguments)};
+  a=s.createElement(g);m=s.getElementsByTagName(g)[0];a.async=1;a.src=r+'?auth='+
+  s.getElementById(o+'-js').getAttribute('data-pw-auth');m.parentNode.insertBefore(a,m);
+  })(window,document,'profitwell','script','https://public.profitwell.com/js/profitwell.js');
+ </script><!-- HEAD_svelte-qgtd5w_END --><!-- HEAD_svelte-kexjpz_START --><!-- HEAD_svelte-kexjpz_END -->
+	<link rel="stylesheet" href="/_app/immutable/assets/__layout-78c83e95.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/SearchBar-39f71f41.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/DynamicDropdown-a3e908b9.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Checkbox-f709387e.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/ChannelElement-5b2190a3.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/SearchBar-a54663ca.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/List-bb396096.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Loading-1c01222e.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/DynamicDropdownWithLabel-19527354.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/InputText-118d9cf2.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Loading-2ce10013.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Toggle-f9cf0a50.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/SettingTile-8d51a855.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/LogoName-e987425d.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/RollingNew-241b9514.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Popup-af641cb3.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/index-90be393b.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Default-c844b62a.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/ToggleElement-68321985.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/TooltipQuestion-a34cd3c2.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/DiscordMessage-9adadbc7.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/RoleElementNew-f6292f10.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/ChannelSelector-7ffa5809.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/LimitsSmall-278ea1df.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/DurationSelector-c971ba0a.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/__layout-5e8bd406.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/ModalBackdrop-0a93f5d5.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Rolling-386a4a47.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Modal-eacfda12.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/SmallUser-bc84f047.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/PageTransition-5419c712.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/index-217127f7.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/SettingsTile-b2c1b9e3.css">
+	<link rel="modulepreload" href="/_app/immutable/start-ca2bbcc8.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-82df6c7a.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-2eba6212.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-995db135.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-eca981c1.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-4ff9504b.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/stores-a29bc92d.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-fbe70647.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/data-9bf7d1b6.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/LogoName-8bf2dd1f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/DynamicDropdown-64c7ab88.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-0fd7e68d.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Utils-a6929837.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/humanize-duration-e6c2c45c.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/SearchBar-79b8b9ef.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/RollingNew-a3459eb1.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/ws-c528a6f9.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-f33f2a57.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Popup-9c19ebc4.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-fe73b41f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Default-0f8bd16f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/ToggleElement-0d97f2ad.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Checkbox-41af109f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/ChannelElement-eb12b000.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/List-e863d2dc.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/SearchBar-67692ac2.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/TooltipQuestion-c7470183.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Loading-ad354e9f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-5fdb0c55.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/DynamicDropdownWithLabel-6a3ff82c.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/ListChannels-281c9e42.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/subActions-5b5615cf.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/DiscordMessage-6d6cab8d.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/InputText-462d2d7a.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Loading-428b2fb5.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/RoleElementNew-9b83d48c.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Toggle-3c653c38.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/ChannelSelector-e94dae72.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/LimitsSmall-66859c79.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/DurationSelector-919a530b.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/dayjs.min-287801d5.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/relativeTime-a16d16b4.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/items-884f65ad.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/discordMembers-031d0734.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-52de9aec.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/SettingTile-729cc69a.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/StripeElements-3ba9af75.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/paddle_public-5b872af8.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/_guildId_/__layout.svelte-3b0af16c.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Guilds-45fb272e.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Modal-58222b21.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/SmallUser-8ee70279.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/Rolling-3cdb23b8.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/PageTransition-ad935f76.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/_guildId_/home/index.svelte-aa31c831.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/SettingsTile-fd7a84f3.js">
+	</head>
+	<body class="notranslate">
+  <div id="svelte" class="notranslate">
+
+
+
+
+
+
+
+
+<nav class="svelte-1nlzy73"><div class="wrapper svelte-1nlzy73"><div class="burger-menu svelte-1nlzy73"><div class="line line-1 svelte-1nlzy73"></div>
+   <div class="line line-2 svelte-1nlzy73"></div>
+   <div class="line line-3 svelte-1nlzy73"></div></div>
+  
+<div class="branding  svelte-648oky" style="--logo-size: 29.25px; --name-size: 78px; column-gap: 3.9000000000000004px; ;"><img src="/assets/branding/logo.png" alt="logo" class="logo glowing svelte-648oky">
+ <img src="/assets/branding/name.svg" alt="name" class="name svelte-648oky" style="margin-top: 2.6px;">
+</div>
+  <div class="server svelte-1nlzy73"><div class="dummy-icon svelte-1nlzy73"></div>
+    <div class="server-name dummy svelte-1nlzy73">
+     not love</div>
+    <img src="/assets/icons/rounded/greater-than.svg" alt="arrow" class="arrow  svelte-1nlzy73">
+    </div>
+  <div class="user svelte-1nlzy73"><img class="avatar svelte-1nlzy73" alt="user-pfp" src="https://cdn.discordapp.com/embed/avatars/0.png?size=256">
+    <div class="username svelte-1nlzy73">EMO</div>
+    <img src="/assets/icons/rounded/greater-than.svg" alt="arrow" class="arrow  svelte-1nlzy73">
+    </div></div>
+</nav>
+ <div class="pre1 svelte-16casoy"><div class="pre2 svelte-16casoy">
+
+
+
+
+<div class="container svelte-z369y4"><div class="loading svelte-mfrh4x"><div class="brand svelte-mfrh4x"><div class="img-wrapper svelte-mfrh4x"><img src="/assets/branding/logo.png" alt="icon" class="icon svelte-mfrh4x"></div>
+  <div class="font svelte-mfrh4x"><img src="/assets/branding/name.svg" alt="icon" class="name svelte-mfrh4x">
+   <div class="sub svelte-mfrh4x">Dashboard</div></div></div>
+ 
+ <div class="bar svelte-mfrh4x"><div class="bar-fill svelte-mfrh4x" style="--animation-duration: 1.5s"></div>
+   <div class="bar-fill svelte-mfrh4x" style="--animation-duration: 2.5s"></div></div>
+</div>
+
+</div></div>
+  </div>
+ 
+
+
+		<script type="module" data-sveltekit-hydrate="pbt2tq">
+		import { set_public_env, start } from "/_app/immutable/start-ca2bbcc8.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="pbt2tq"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: (function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,_,$){return {authenticated:i,userData:{cached:i,user:{id:"843941917329981561",username:"josh_765l",avatar:a,discriminator:T,public_flags:U,flags:U,banner:a,accent_color:a,global_name:"EMO",avatar_decoration_data:a,collectibles:a,display_name_styles:a,banner_color:a,clan:{identity_guild_id:O,identity_enabled:i,tag:V,badge:W},primary_guild:{identity_guild_id:O,identity_enabled:i,tag:V,badge:W},mfa_enabled:b,locale:"en-GB",premium_type:0,inSupportServer:i},guilds:[{id:"1331487204198973600",name:"SgamerMIGHTY's server",icon:"0bdc83039cbab03ef0a27d7890ce893e",banner:a,owner:b,permissions:L,features:[e]},{id:"1354289845744439417",name:"TEST MOD",icon:a,banner:a,owner:i,permissions:L,features:[]},{id:"1354890934051016864",name:"BIG MOD",icon:a,banner:a,owner:i,permissions:L,features:[]},{id:"1360161480795881543",name:"EXP (Mr.TOXIC)",icon:a,banner:a,owner:i,permissions:L,features:[c,d]},{id:"1372540880564781076",name:"12",icon:a,banner:a,owner:i,permissions:L,features:[]},{id:"1395138993649090631",name:"TEST 1",icon:a,banner:a,owner:i,permissions:L,features:[]}],otherGuilds:[{id:"322850917248663552",name:"Official Fortnite",icon:"58293d2af285f6be048435451ef72c40",banner:"b1cd314cb44ea39ed7e8868575295527",owner:b,permissions:"141018912590848",features:[y,o,P,z,j,p,d,A,q,l,B,f,"FEATURABLE",r,k,C,s,D,E,t,F,Q,e,"GUILD_MEMBER_VERIFICATION_EXPERIMENT",m,X,c,"VIP_REGIONS","COMMUNITY_EXP_LARGE_UNGATED",g,G,u,h,H,I,J,v,n,K]},{id:"678279978244374528",name:"Sapphire",icon:"b5731d97c5c2f38728a302fa60cacb01",banner:"f8f868c0d063187baa5fd76088792d2e",owner:b,permissions:"1091168687734849",features:[y,o,P,z,j,p,"DEVELOPER_SUPPORT_SERVER",d,q,R,A,l,B,Y,f,"COMMUNITY_EXP_MEDIUM",k,C,s,v,w,D,E,t,F,Q,e,x,m,N,c,g,G,u,h,H,J,I,n,K]},{id:"805169750727983135",name:"Gehsture's Hangout",icon:"7fca1a4140ce50fe2fcf47ee315b0d1d",banner:"c1d59e53315b6ffc63e4e32ab5c2e4be",owner:b,permissions:"2182399621697088",features:[y,o,P,z,j,p,d,q,A,l,Z,B,f,r,k,C,"REPORT_TO_MOD_SURVEY",s,w,D,E,t,F,Q,e,x,m,N,c,M,g,G,u,h,H,I,J,v,n,K]},{id:"822426820447567872",name:"BotGhost 👻",icon:"65edc0de95cc6aa9aea7ab8f75398198",banner:"aa09be2c3afaff4336692e1931dfb298",owner:b,permissions:"180326386174529",features:[y,o,"COMMUNITY_EXP_LARGE_GATED",z,j,p,d,q,A,R,l,B,Y,f,r,k,C,s,w,D,t,F,e,x,m,N,c,M,g,G,u,h,I,J,v,n,E]},{id:"925274403984506880",name:"Guild Tags List | 100+ FREE GUILDS",icon:"a_c58fd4ac32d1194f7808438771c96fc8",banner:"a_f1ca678bd6a494df7dc9116d5be01065",owner:b,permissions:"552007175681",features:[y,F,o,e,z,j,p,x,m,N,d,q,A,l,c,M,B,g,f,G,r,u,k,I,J,C,v,s,E,D]},{id:"949966252863016991",name:"Ripcrabby's server",icon:"ee9628c7e997c11461019ce73d9d062b",banner:a,owner:b,permissions:"2248473465835073",features:[t]},{id:"995737329979375646",name:"Synergy",icon:"7f9e2015fd69dc6f017cdda73717686b",banner:"182710a03cd2ebc351fde21df0b97dd3",owner:b,permissions:"140874994745345",features:[t,"CREATOR_MONETIZABLE_PROVISIONAL",e,"CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING",j,d,R,c,g,f,_,S,r,$,h,"ROLE_SUBSCRIPTIONS_ENABLED",k,n,w]},{id:"1013290465430343750",name:"Gamevercity",icon:"ea99d59cefbb81a2bbc22c9cb9f7c0da",banner:a,owner:b,permissions:"2218784974032449",features:[t,f,e,"EXPOSED_TO_ACTIVITIES_WTP_EXPERIMENT",d,c]},{id:"1128946232207888414",name:"Delta Force Game",icon:"3d60911c9461e593b672b3d557b93807",banner:"6bdd2e656c69c41e8b120c8acc9d735f",owner:b,permissions:"274981784641",features:[y,o,z,j,p,d,q,A,l,B,f,r,k,C,s,w,D,E,t,F,e,x,m,X,c,M,g,G,u,h,H,I,J,v,n,K]},{id:"1237204716879089746",name:"Accede Productions | Discord Support",icon:"a_3f5e0d3edca96a15af9c320f091f74f7",banner:a,owner:b,permissions:"2221982107373121",features:[f,g,S,e,h,j,H,x,m,d,k,l,n,K,w,c]},{id:"1253243571608354897",name:"Jenil's Hideout",icon:"a_823a5d573091b0d530fc7891a53947e0",banner:"ea7efd2b5db14fb83311ea49d6372fcc",owner:b,permissions:T,features:[o,j,p,x,m,d,q,l,c,g,_,S,r,u,h,H,k,v,n,s,K,w]},{id:"1333477418463268945",name:"Metaverse Hub",icon:"bbb3b4b75b5c795ee3f0c8c0a4f4b586",banner:a,owner:b,permissions:"2221941201044480",features:[f,e,h,d,c,$,g]},{id:O,name:"#AURA | Angel's Hangout・Social・SFW・Active・VCs",icon:"a_316389cc9ca7f6cf1d48ce88a271e1c9",banner:"a_6194e058a8bb16444079db59abae6fae",owner:b,permissions:"1659135166062145",features:[y,o,z,j,p,d,q,A,l,B,f,r,k,C,s,w,D,E,F,e,x,m,c,M,g,G,u,h,H,I,J,v,n,K]},{id:"1365224024799445063",name:"Mr.TOXIC",icon:"35aa00c78408c4d6418dce1558e142f2",banner:a,owner:b,permissions:"140741783322624",features:[f,e,h,d,Z,c]}]},state:"master"}}(null,false,"COMMUNITY","NEWS","TIERLESS_BOOSTING_SYSTEM_MESSAGE","SOUNDBOARD","PREVIEW_ENABLED","MEMBER_VERIFICATION_GATE_ENABLED",true,"AUTO_MODERATION","TIERLESS_BOOSTING","DISCOVERABLE","GUILD_WEB_PAGE_VANITY_URL","GUILD_ONBOARDING_EVER_ENABLED","VIDEO_BITRATE_ENHANCED","AUDIO_BITRATE_128_KBPS","ANIMATED_ICON","ENHANCED_ROLE_COLORS","STAGE_CHANNEL_VIEWERS_50","CHANNEL_ICON_EMOJIS_GENERATED","INVITE_SPLASH","VIDEO_QUALITY_720_60FPS","GUILD_SERVER_GUIDE","ENABLED_DISCOVERABLE_BEFORE","ANIMATED_BANNER","AUDIO_BITRATE_256_KBPS","MAX_FILE_SIZE_50_MB","STAGE_CHANNEL_VIEWERS_300","ROLE_ICONS","AUDIO_BITRATE_384_KBPS","VIDEO_QUALITY_1080_60FPS","BANNER","STAGE_CHANNEL_VIEWERS_150","GUILD_ONBOARDING","MAX_FILE_SIZE_100_MB","VANITY_URL","GUILD_ONBOARDING_HAS_PROMPTS","4503599627370495","GUILD_TAGS","TEXT_IN_VOICE_ENABLED","1354482137285267627","THREADS_ENABLED","NEW_THREAD_PERMISSIONS","WELCOME_SCREEN_ENABLED","ACTIVITY_FEED_DISABLED_BY_USER","0",64,"AURA","2d590d3467d034c52fa4e5344629a6b2","VERIFIED","AUTOMOD_TRIGGER_USER_PROFILE","ACTIVITY_FEED_ENABLED_BY_USER","CREATOR_ACCEPTED_NEW_TERMS","GUESTS_ENABLED")),
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 2, 30],
+				params: {guildId:"1360161480795881543"},
+				routeId: "[guildId]/home"
+			}
+		});
+	</script></div>
+  <!--<script src="/js/viewport-fix.js"></script>
+  <script>new VVP()</script>-->
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96421607ad49f64d","version":"2025.7.0","r":1,"token":"35e1d3bd4e334600b240058331f54fd5","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
